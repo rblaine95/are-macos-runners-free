@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+    # runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: sleep 60
