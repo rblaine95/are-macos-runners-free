@@ -27,6 +27,7 @@ jobs:
       - run: sleep 60
 
   quad-cores:
+    # https://github.blog/2024-01-17-github-hosted-runners-double-the-power-for-open-source/
     name: Quad Cores
     runs-on: ubuntu-latest
     steps:
