@@ -25,3 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sleep 300
+
+  quad-cores:
+    name: Quad Cores
+    runs-on: ubuntu-latest
+    steps:
+      - run: lscpu
+      - run: nproc
