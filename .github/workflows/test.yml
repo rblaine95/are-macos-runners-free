@@ -35,3 +35,4 @@ jobs:
       - run: lscpu
       - run: nproc
       - run: free -h
+      - run: df -h
