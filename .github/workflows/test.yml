@@ -24,9 +24,7 @@ jobs:
           - name: 9
     steps:
       - uses: actions/checkout@v4
-      - run: nproc
-      - run: free -h
-      - run: sleep 300
+      - run: sleep 60
 
   quad-cores:
     name: Quad Cores
