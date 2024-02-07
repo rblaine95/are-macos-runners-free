@@ -24,8 +24,8 @@ jobs:
           - name: 9
     steps:
       - uses: actions/checkout@v4
-      - run: lscpu
       - run: nproc
+      - run: free -h
       - run: sleep 300
 
   quad-cores:
@@ -35,3 +35,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: lscpu
       - run: nproc
+      - run: free -h
