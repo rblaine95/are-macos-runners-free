@@ -23,7 +23,6 @@ jobs:
           - name: 8
           - name: 9
     steps:
-      - uses: actions/checkout@v4
       - run: sleep 60
 
   quad-cores:
@@ -31,7 +30,6 @@ jobs:
     name: Quad Cores
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - run: lscpu
       - run: nproc
       - run: free -h
