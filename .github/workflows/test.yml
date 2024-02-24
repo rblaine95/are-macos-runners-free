@@ -31,6 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: lscpu
-      - run: nproc
+      - run: echo $PWD
       - run: free -h
       - run: df -h
