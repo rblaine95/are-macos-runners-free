@@ -5,8 +5,8 @@ on:
   push:
 
 jobs:
-  test:
-    name: Test
+  macos-latest:
+    name: MacOS Latest
     runs-on: macos-latest
     # runs-on: ubuntu-latest
     strategy:
@@ -17,11 +17,6 @@ jobs:
           - name: 2
           - name: 3
           - name: 4
-          - name: 5
-          - name: 6
-          - name: 7
-          - name: 8
-          - name: 9
     steps:
       - run: sleep 60
 
@@ -34,3 +29,14 @@ jobs:
       - run: echo $PWD
       - run: free -h
       - run: df -h
+
+  macos-13:
+    name: MacOS 13
+    runs-on: macos-13
+    steps:
+      - run: lscpu
+  macos-14:
+    name: MacOS 14
+    runs-on: macos-14
+    steps:
+      - run: lscpu
