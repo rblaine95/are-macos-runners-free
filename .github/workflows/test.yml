@@ -18,6 +18,7 @@ jobs:
           - name: 3
           - name: 4
     steps:
+      - run: system_profiler
       - run: sleep 60
 
   quad-cores:
