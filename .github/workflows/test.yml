@@ -31,6 +31,15 @@ jobs:
       - run: free -h
       - run: df -h
 
+  linux-arm:
+    name: Linux ARM
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - run: lscpi
+      - run: echo $PWD
+      - run: free -h
+      - run: df -h
+
   macos-13:
     name: MacOS 13
     runs-on: macos-13
