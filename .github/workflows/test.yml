@@ -35,7 +35,7 @@ jobs:
     name: Linux ARM
     runs-on: ubuntu-24.04-arm
     steps:
-      - run: lscpi
+      - run: lscpu
       - run: echo $PWD
       - run: free -h
       - run: df -h
