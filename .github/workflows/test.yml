@@ -40,15 +40,6 @@ jobs:
       - run: free -h
       - run: df -h
 
-  another-linux-arm:
-    name: Another Linux ARM
-    runs-on: ubuntu-latest-arm
-    steps:
-      - run: lscpu
-      - run: echo $PWD
-      - run: free -h
-      - run: df -h
-
   macos-13:
     name: MacOS 13
     runs-on: macos-13
