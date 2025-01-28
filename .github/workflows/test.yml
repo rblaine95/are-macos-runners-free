@@ -42,7 +42,7 @@ jobs:
 
   another-linux-arm:
     name: Another Linux ARM
-    runs-on: ubuntu-latest-arm64 # Apparently this is valid? https://corrode.dev/blog/tips-for-faster-ci-builds/
+    runs-on: ubuntu-latest-arm
     steps:
       - run: lscpu
       - run: echo $PWD
