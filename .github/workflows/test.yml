@@ -15,8 +15,6 @@ jobs:
           - name: 0
           - name: 1
           - name: 2
-          - name: 3
-          - name: 4
     steps:
       - run: system_profiler
       - run: sleep 60
@@ -40,13 +38,19 @@ jobs:
       - run: free -h
       - run: df -h
 
-  macos-13:
-    name: MacOS 13
-    runs-on: macos-13
-    steps:
-      - run: system_profiler
   macos-14:
     name: MacOS 14
     runs-on: macos-14
     steps:
       - run: system_profiler
+  macos-15:
+    name: MacOS 15
+    runs-on: macos-15
+    steps:
+      - run: system_profiler
+  macos-15-intel:
+    name: MacOS 15 Intel
+    runs-on: macos-15-intel
+    steps:
+      - run: system_profiler
+
